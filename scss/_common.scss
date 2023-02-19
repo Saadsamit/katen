@@ -9,6 +9,38 @@ $text-color:#8f9bad;
 $common-color: #fff;
 $black-color: #142030;
 
+%btnstyle {  
+        color: $common-color;
+        font-family: $body-text;
+        font-size: 15px;
+        display: inline-block;
+        line-height: 25.5px;
+        border-radius: 50px;
+        padding: 10px 30px;
+        background: $background-color ;
+        background-size: 200% auto;
+        text-align: center;
+        width: fit-content;
+        transition: .5s;
+        &:hover{
+            background-size: 100% auto;
+        }
+  }
+  
+%hover{
+    transition: .5s;
+      &:hover{
+          color: $header-hover-color;
+      }
+}
+%over{
+    overflow: hidden;
+            &:hover img{
+                transform: scale(1.1);
+                transition: .5s;
+            }
+}
+
 h1,
 h2,
 h3,
@@ -31,9 +63,13 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6,
+a{
   font-family: $body-text;
   color: $header-color;
+}
+a{
+    display: inline-block;
 }
 button{
   border: none;
@@ -118,9 +154,9 @@ nav{
                     position: fixed;
                     inset: 0;
                     background: $common-color;
-                    transition: .5s;
                     &.active{
                         z-index: 9;
+                        transition: .3s;
                         transform: scale(1);
                     }
                     .Search_bar{
