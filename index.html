@@ -70,7 +70,25 @@
       <div class="navbar-nav nav_last ms-5">
        <ul class="d-flex">
           <li class="nav-item">
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button id="search_btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <div id="Search" class="Search h-100">
+              <div class="position-relative d-flex flex-wrap justify-content-center align-items-center h-100">
+                <div class="Search_bar">
+                  <h4 class="text-center">Press ESC to close</h4>
+                  <form action="#" class="row">
+                    <input type="search" class="col-10" placeholder="Search and press enter ..." />
+                    <button type="submit" class="col-2">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </form>
+                </div>
+                <div class="cancel_btn position-absolute">
+                  <button id="search_cancel_btn"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+              </div>
+            </div>
           </li>
           <li class="nav-item">
              <button id="nav_btn"><i class="fa-solid fa-equals"></i>
@@ -103,7 +121,7 @@
           <a class="nav-link" href="Author.html">Author</a>
         </li>
         <li class="list-group-item nav-item" >
-          <a class="nav-link" href="#">
+          <a class="nav-link  dropdown-toggle" href="#">
             Pages
           </a>
           <ul class="list-group list-group-flush innar_menu">
@@ -142,6 +160,7 @@
     </div>
   </div> 
    <!-- nav section end  -->
+   
     
   <!-- jquery js -->
      <script src="js/jquery-1.12.4.min.js"></script>
