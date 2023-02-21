@@ -8,6 +8,7 @@ $navbar-color:#79889e;
 $text-color:#8f9bad;
 $common-color: #fff;
 $black-color: #142030;
+$border:1px solid $border-color;
 
 %btnstyle {  
         color: $common-color;
@@ -35,11 +36,165 @@ $black-color: #142030;
 }
 %over{
     overflow: hidden;
+    transition: .5s;
             &:hover img{
                 transform: scale(1.1);
                 transition: .5s;
             }
 }
+@mixin header($font_size:20px,$line_height:28px){
+    display: inline-block;
+    padding-bottom: 3px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: $font_size;
+    line-height: $line_height;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 33.33%;
+        background: $header-hover-color;
+        height: 2px;
+
+    }
+}
+@mixin card(){
+    padding-right: 30px;
+    .main_img{
+        border-radius: 10px;
+        position: relative;
+        .img_container{
+            border-radius: 10px;
+            @extend %over;
+            img{
+                cursor: pointer;
+                border-radius: 10px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+       .title{
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        .link{
+            @extend %btnstyle;
+            padding: 0 5px;
+            font-size: 13px;
+        }
+       } 
+       .icon{
+        position: absolute;
+        right: 15px;
+        bottom: 0;
+        transform: translateY(50%);
+        i{
+            z-index: 2;
+            color: $common-color;
+            background: $background-color;
+            text-align: center;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            border-radius: 50%;
+        }
+       }
+    }
+    .info{
+        padding-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        .img{
+            width: 35px;
+            height: 35px;
+            
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+        }
+      .aythor a,.date {
+        color: $text-color;
+        font-family: $body-text;
+        font-size: 14px;       
+        line-height: 23.8px; 
+      }
+      .aythor a{
+        padding: 0 10px;
+        @extend %hover;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            right: -5px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: $header-hover-color;
+            height: 4px;
+            width: 4px;
+            border-radius: 50%;
+        }
+    }
+    .date{
+        padding-left: 15px;
+    }
+}
+    h2{
+        padding-top: 15px;
+        a{
+            font-size: 20px;
+            line-height: 28px;
+            font-weight: 700;
+            @extend %hover;
+        }
+    }
+    p{
+        padding-top: 15px;
+        color: $text-color;
+        font-size: 15px;
+        line-height: 25.5px;
+    }
+}
+@mixin blog-min($radius){
+        padding: 15px 0;
+    .img{
+        @extend %over;
+        border-radius: $radius;
+        img{
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+    }
+    .text{
+        border-bottom: $border;
+        padding: 0 10px;
+        
+        h3{
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 21px;
+            @extend %hover;
+            cursor: pointer;
+        }
+        p{
+            color: $text-color;
+            font-size: 14px;
+            line-height: 23.8px;
+            padding: 5px 0;
+        }
+    }
+    &:last-child .text{
+        border: none;
+    }
+}
+
 
 h1,
 h2,
@@ -88,6 +243,11 @@ ol {
 img {
   max-width: 100%;
 };
+.border_box{
+    border: $border;
+    border-radius: 10px;
+    padding: 20px;
+}
 //nav start
 nav{
     #MY_nav{
