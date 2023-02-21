@@ -10,12 +10,14 @@
      <link rel="stylesheet" href="css/fontawesome.min.css">
   <!-- bootstrap css -->
      <link rel="stylesheet" href="css/bootstrap.min.css">
+     <!-- silck css -->
+         <link rel="stylesheet" href="css/slick.css">
   <!-- main css-->
      <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
    <!-- nav section start -->
-   <nav class="navbar navbar-expand-lg py-lg-4">
+   <nav class="navbar navbar-expand-lg py-lg-4" id="nav">
     <div class="container">
       <a class="navbar-brand" href="index.html"><img src="img/logo.svg" alt=""></a>
       <div class="collapse navbar-collapse d-lg-flex justify-content-lg-between align-items-center" id="MY_nav">
@@ -166,11 +168,11 @@
             <div class="row">
               <div class="col-lg-8">
                 <div class="inner h-100">
-                  <div class="img position-relative h-100">
+                  <div class="img h-100">
                     <img  src="img/blog_banner_img.jpg" alt="">
-                    <div class="text position-absolute">
+                    <div class="text">
                       <a href="#" class="link">Inspiration</a>
-                      <h1>
+                      <h1 class="main">
                         <a href="Post_Details.html">5 Easy Ways You Can Turn Future Into Success</a>
                       </h1>
                       <p>
@@ -314,17 +316,572 @@
                 </div>
                </div> 
             <!-- Editor section end  -->
+            <!-- Trending section start -->
+               <div id="trending">
+                <div class="header">
+                  <h3>
+                    Trending
+                  </h3>
+                </div>
+                <div class="border_box trending_container">
+                  <div class="row">
+                    <div class="col-md-6 first">
+                      <div class="my_card">
+                        <div class="main_img">
+                          <div class="img_container">
+                            <img src="img/trending-img.jpg" alt="">
+                          </div>
+                          <div class="title">
+                            <a href="#" class="link">Fashion</a>
+                          </div>
+                          <div class="icon">
+                            <i class="fa-solid fa-video"></i>
+                          </div>
+                        </div>
+                        <ul class="info">
+                          <li class="img">
+                            <img src="img/profile_img.jpg" alt="">
+                          </li>
+                          <li class="aythor"><a href="Author.html">Katen Doe</a></li>
+                          <li class="date">August 23, 2022</li>
+                        </ul>
+                        <h2>
+                          <a href="Post_Details.html">Facts About Business That Will Help You Success</a>
+                        </h2>
+                        <p>The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc,…</p>
+                      </div>
+                      <div class=" blog_info">
+                        <div class="blog_container row g-0 align-items-center">
+                          <div class="col-4 img">
+                            <img src="img/editer_bolg_4.jpg" alt="">
+                          </div>
+                          <div class="col-8 text">
+                            <h3>Your Light Is About To Stop Being Relevant</h3>
+                            <p>August 20, 2022</p>
+                          </div>
+                        </div>
+                        <div class="blog_container row g-0 align-items-center">
+                          <div class="col-4 img">
+                            <img src="img/editer_bolg_3.jpg" alt="">
+                          </div>
+                          <div class="col-8 text">
+                            <h3>3 Easy Ways To Make Your iPhone Faster</h3>
+                            <p>August 23, 2022</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 last">
+                      <div class="my_card">
+                        <div class="main_img">
+                          <div class="img_container">
+                            <img src="img/blog_banner_img.jpg" alt="">
+                          </div>
+                          <div class="title">
+                            <a href="#" class="link">Inspiration</a>
+                          </div>
+                          <div class="icon">
+                            <i class="fa-solid fa-headphones"></i>
+                          </div>
+                        </div>
+                        <ul class="info">
+                          <li class="img">
+                            <img src="img/profile_img.jpg" alt="">
+                          </li>
+                          <li class="aythor"><a href="Author.html">Katen Doe</a></li>
+                          <li class="date">August 23, 2022</li>
+                        </ul>
+                        <h2>
+                          <a href="Post_Details.html">5 Easy Ways You Can Turn Future Into Success</a>
+                        </h2>
+                        <p>The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc,…</p>
+                      </div>
+                      <div class=" blog_info">
+                        <div class="blog_container row g-0 align-items-center">
+                          <div class="col-4 img">
+                            <img src="img/editer_bolg_5.jpg" alt="">
+                          </div>
+                          <div class="col-8 text">
+                            <h3>Here Are 8 Ways To Success Faster</h3>
+                            <p>August 19, 2022</p>
+                          </div>
+                        </div>
+                        <div class="blog_container row g-0 align-items-center">
+                          <div class="col-4 img">
+                            <img src="img/editer_bolg_2.jpg" alt="">
+                          </div>
+                          <div class="col-8 text">
+                            <h3>How To Buy Bulb On a Tight Budget</h3>
+                            <p>August 23, 2022</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               </div> 
+            <!-- Trending section end  -->
+            <!-- Inspiration section start -->
+               <div id="inspiration">
+                <div class="header">
+                  <h3>
+                    Inspiration
+                  </h3>
+                </div>
+                <div class="inspiration_slider">
+                  <div class="inner">
+                    <div class="img">
+                      <img  src="img/slider-img-1.jpg" alt="">
+                      <div class="text">
+                        <a href="#" class="link">Inspiration</a>
+                        <h2 class="main">
+                          <a href="Post_Details.html">5 Easy Ways You Can Turn Future Into Success</a>
+                        </h2>
+                        <p>
+                          <a href="Author.html">Katen Doe</a>
+                          <span>August 20, 2022</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="inner">
+                    <div class="img">
+                      <img  src="img/slider-img-2.jpg" alt="">
+                      <div class="text">
+                        <a href="#" class="link">Inspiration</a>
+                        <h2 class="main">
+                          <a href="Post_Details.html">5 Easy Ways You Can Turn Future Into Success</a>
+                        </h2>
+                        <p>
+                          <a href="Author.html">Katen Doe</a>
+                          <span>August 20, 2022</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="inner h-100">
+                    <div class="img h-100">
+                      <img  src="img/slider-img-3.jpg" alt="">
+                      <div class="text">
+                        <a href="#" class="link">Inspiration</a>
+                        <h2 class="main">
+                          <a href="Post_Details.html">5 Easy Ways You Can Turn Future Into Success</a>
+                        </h2>
+                        <p>
+                          <a href="Author.html">Katen Doe</a>
+                          <span>August 20, 2022</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               </div> 
+            <!-- Inspiration section end  -->
+            <!-- Latest Posts section start -->
+               <div id="latest_posts">
+                <div class="header">
+                  <h3>
+                    Latest Posts
+                  </h3>
+                </div>
+                <div class="border_box post_container">
+                  <div class="my_card row">
+                    <div class="main_img col-md-5">
+                      <div class="img_container">
+                        <img src="img/trending-img.jpg" alt="">
+                      </div>
+                      <div class="icon">
+                        <i class="fa-solid fa-video"></i>
+                      </div>
+                    </div>
+                    <div class="col-md-7">
+                      <ul class="info">
+                        <li class="img">
+                          <img src="img/profile_img.jpg" alt="">
+                        </li>
+                        <li class="aythor"><a href="Author.html">Katen Doe</a></li>
+                        <li class="aythor"><a href="Author.html">Fashion</a></li>
+                        <li class="date">August 23, 2022</li>
+                      </ul>
+                      <h2>
+                        <a href="Post_Details.html">Facts About Business That Will Help You Success</a>
+                      </h2>
+                      <p>The European languages are members of the same family. Their separate existence is a myth…</p>
+                      <p class="d-flex justify-content-between icons">
+                        <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                        <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="my_card row">
+                    <div class="main_img col-md-5">
+                      <div class="img_container">
+                        <img src="img/posts-img-1.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="col-md-7">
+                      <ul class="info">
+                        <li class="img">
+                          <img src="img/profile_img.jpg" alt="">
+                        </li>
+                        <li class="aythor"><a href="Author.html">Katen Doe</a></li>
+                        <li class="aythor"><a href="Author.html">Trending</a></li>
+                        <li class="date">August 23, 2022</li>
+                      </ul>
+                      <h2>
+                        <a href="Post_Details.html">60 Things To Immediately Do About Building</a>
+                      </h2>
+                      <p>The European languages are members of the same family. Their separate existence is a myth…</p>
+                      <p class="d-flex justify-content-between icons">
+                        <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                        <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="my_card row">
+                    <div class="main_img col-md-5">
+                      <div class="img_container">
+                        <img src="img/posts-img-2.jpg" alt="">
+                      </div>
+                      <div class="icon">
+                        <i class="fa-solid fa-video"></i>
+                      </div>
+                    </div>
+                    <div class="col-md-7">
+                      <ul class="info">
+                        <li class="img">
+                          <img src="img/profile_img.jpg" alt="">
+                        </li>
+                        <li class="aythor"><a href="Author.html">Katen Doe</a></li>
+                        <li class="aythor"><a href="Author.html">Lifestyle</a></li>
+                        <li class="date">August 23, 2022</li>
+                      </ul>
+                      <h2>
+                        <a href="Post_Details.html">Master The Art Of Nature With These 7 Tips</a>
+                      </h2>
+                      <p>The European languages are members of the same family. Their separate existence is a myth…</p>
+                      <p class="d-flex justify-content-between icons">
+                        <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                        <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="my_card row">
+                    <div class="main_img col-md-5">
+                      <div class="img_container">
+                        <img src="img/posts-img-3.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="col-md-7">
+                      <ul class="info">
+                        <li class="img">
+                          <img src="img/profile_img.jpg" alt="">
+                        </li>
+                        <li class="aythor"><a href="Author.html">Katen Doe</a></li>
+                        <li class="aythor"><a href="Author.html">Politic</a></li>
+                        <li class="date">August 23, 2022</li>
+                      </ul>
+                      <h2>
+                        <a href="Post_Details.html">Your Light Is About To Stop Being Relevant</a>
+                      </h2>
+                      <p>The European languages are members of the same family. Their separate existence is a myth…</p>
+                      <p class="d-flex justify-content-between icons">
+                        <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                        <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+                      </p>
+                    </div>
+                  </div>
+                  <div  class="text-center">
+                    <button type="button" class="btn">
+                      Load more
+                    </button>
+                  </div>
+                </div>
+               </div> 
+            <!-- Latest Posts section end  -->
           </div>
-          <div class="col-lg-4"></div>
+          <div class="col-lg-4" id="side_sec">
+            <div class="border_box side_sec-1">
+              <div class="text-center">
+                <img src="img/logo.svg" alt="">
+                <p>Hello, We’re content writer who is fascinated by content fashion, celebrity and lifestyle. We helps clients bring the right content to the right people.</p>
+                <div class="social_icon">
+                  <ul class="d-flex justify-content-center">
+                     <li>
+                       <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                     </li>
+                      <li>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                      </li>
+                   </ul>
+                </div>
+              </div>
+            </div>
+            <div class="border_box side_sec-2">
+              <div class="header text-center">
+                <h3>
+                  Popular Posts
+                </h3>
+              </div>
+              <div class=" blog_info">
+                <div class="blog_container row g-0 align-items-center">
+                  <div class="col-2 img">
+                    <img src="img/side-img.jpg" alt="">
+                  </div>
+                  <div class="col-10 text">
+                    <h3>3 Easy Ways To Make Your iPhone Faster</h3>
+                    <p>August 19, 2022</p>
+                  </div>
+                </div>
+                <div class="blog_container row g-0 align-items-center">
+                  <div class="col-2 img">
+                    <img src="img/side-img-1.jpg" alt="">
+                  </div>
+                  <div class="col-10 text">
+                    <h3>Facts About Business That Will Help You Success</h3>
+                    <p>August 23, 2022</p>
+                  </div>
+                </div>
+                <div class="blog_container row g-0 align-items-center">
+                  <div class="col-2 img">
+                    <img src="img/side-img-2.jpg" alt="">
+                  </div>
+                  <div class="col-10 text">
+                    <h3>15 Unheard Ways To Achieve Greater Walker</h3>
+                    <p>August 23, 2022</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border_box side_sec-3">
+              <div class="header text-center">
+                <h3>
+                  Explore Topics
+                </h3>
+              </div>
+              <ul>
+                <li class="d-flex justify-content-between">
+                  <p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  <a href="#">Celebration</a>
+                  </p>
+                  <span class="text-end">
+                    (2)
+                  </span>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  <a href="#">Culture</a>
+                  </p>
+                  <span class="text-end">
+                    (2)
+                  </span>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  <a href="#">Fashion</a>
+                  </p>
+                  <span class="text-end">
+                    (1)
+                  </span>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  <a href="#">Inspiration</a>
+                  </p>
+                  <span class="text-end">
+                    (2)
+                  </span>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  <a href="#">Lifestyle</a>
+                  </p>
+                  <span class="text-end">
+                    (6)
+                  </span>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  <a href="#">Politic</a>
+                  </p>
+                  <span class="text-end">
+                    (2)
+                  </span>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  <a href="#">Trending</a>
+                  </p>
+                  <span class="text-end">
+                    (2)
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="border_box side_sec-4">
+              <div class="header text-center">
+                <h3>
+                  Newsletter
+                </h3>
+              </div>
+              <form action="" class="row g-0 text-center">
+                <h4 class="col-12">Join 70,000 subscribers!</h4>
+                <input class="col-12" type="email" required placeholder="Email address…">
+                <button class="col-12" type="submit">
+                  Sign Up
+                </button>
+              </form>
+              <p class="col-12 text-center">By signing up, you agree to our <a href="#">Privacy Policy</a></p>
+            </div>
+            <div class="border_box side_sec-5">
+              <div class="header text-center">
+                <h3>
+                  Celebration
+                </h3>
+              </div>
+              <div class="card_container">
+                <div class="my_card">
+                  <div class="main_img">
+                    <div class="img_container">
+                      <img src="img/side-slide-img-1.jpg" alt="">
+                    </div>
+                    <div class="title">
+                      <a href="#" class="link">Celebration</a>
+                    </div>
+                  </div>
+                  <h2>
+                    <a href="Post_Details.html">What Can You Do About Fashion Right Now</a>
+                  </h2>
+                  <ul class="info">
+                    <li class="aythor"><a href="Author.html">Katen Doe</a></li>
+                    <li class="date">17 August 2022</li>
+                  </ul>
+                </div>
+                <div class="my_card">
+                  <div class="main_img">
+                    <div class="img_container">
+                      <img src="img/side-slide-img-2.jpg" alt="">
+                    </div>
+                    <div class="title">
+                      <a href="#" class="link">Celebration</a>
+                    </div>
+                  </div>
+                  <h2>
+                    <a href="Post_Details.html">Want To Have A More Appealing Tattoo?</a>
+                  </h2>
+                  <ul class="info">
+                    <li class="aythor"><a href="Author.html">Katen Doe</a></li>
+                    <li class="date">16 August 2022</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="border_box side_sec-6">
+              <div class="header text-center">
+                <h3>
+                  Tag Clouds
+                </h3>
+              </div>
+              <div class="links">
+                <a href="#">Audio</a>
+                <a href="#">Content</a>
+                <a href="#">Featured</a>
+                <a href="#">Image</a>
+                <a href="#">Inspiration</a>
+                <a href="#">Lifesty</a>
+                <a href="#">Photo</a>
+                <a href="#">Pick</a>
+                <a href="#">Slide</a>
+                <a href="#">Trending</a>
+              </div>
+            </div>
+          </div>
         </div>
        </div>
+       <!-- footer section start -->
+          <footer class="container">
+            <div class="footer_imgs">
+              <div class="row g-2">
+                <div class="col-md-2 imgs">
+                  <img src="img/footer-img-1.jpg" alt="">
+                </div>
+                <div class="col-md-2 imgs">
+                  <img src="img/footer-img-2.jpg" alt="">
+                </div>
+                <div class="col-md-2 imgs">
+                  <img src="img/footer-img-3.jpg" alt="">
+                </div>
+                <div class="col-md-2 imgs">
+                  <img src="img/footer-img-4.jpg" alt="">
+                </div>
+                <div class="col-md-2 imgs">
+                  <img src="img/footer-img-5.jpg" alt="">
+                </div>
+                <div class="col-md-2 imgs">
+                  <img src="img/footer-img-6.jpg" alt="">
+                </div>
+              </div>
+              <div class="footer_text">
+                <a href="#">@Katen on Instagram</a>
+              </div>
+            </div>
+            <div class="last_footer">
+              <div class="d-flex flex-wrap justify-content-between align-items-center">
+                <p>© 2022 Katen. Theme by ThemeGer.</p>
+                <ul class="d-flex social_icon">
+                  <li>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  </li>
+                   <li>
+                     <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                   </li>
+                   <li>
+                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                   </li>
+                   <li>
+                     <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                   </li>
+                   <li>
+                     <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                   </li>
+                   <li>
+                     <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                   </li>
+                </ul>
+                <button id="back_to_top">
+                  <i class="fa-solid fa-chevron-up"></i>  Back to Top
+                </button>
+              </div>
+            </div>
+          </footer> 
+       <!-- footer section end  -->
        
-
 
   <!-- jquery js -->
      <script src="js/jquery-1.12.4.min.js"></script>
   <!-- bootstrap js -->
      <script src="js/bootstrap.bundle.min.js"></script>
+     <!-- slick js -->
+         <script src="js/slick.min.js"></script>
   <!-- main js -->
      <script src="js/app.js"></script>
 </body>
