@@ -1,0 +1,197 @@
+#bolgs_news.first-copy{
+#latest_posts{
+    .post_container{
+        .my_card{
+            &:last-child{
+                border: none;
+            }
+        }
+    }
+}
+}
+#banner.copy{
+    background: $bg;
+    .contant{
+        padding: 60px 0;
+        h1{
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 42px;
+        }
+        p,a{
+            color: $text-color;
+            font-size: 14px;
+            line-height: 23.8px;
+            transition: .5s;
+        }
+        a:hover{
+            color: $header-hover-color;
+        }
+    }
+}
+#banner.aythor{
+    border-radius: 10px;
+    .sub{
+        padding: 20px;
+        .img_banner{
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+        }
+        .contant{
+            padding: 0;
+            h1{
+                padding-bottom: 10px;
+            }
+            p{
+                font-size: 15px;
+                line-height: 25.5px;
+            }
+            .social_icon{
+                padding-top: 10px;
+                ul{
+                    li{
+                        padding-right: 15px;
+                        a{
+                            color: $header-color;
+                            @extend %hover;
+                            i{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#bolgs_news.Second-copy{
+    #latest_posts{
+        .dots{
+            padding-top: 40px;
+            li {
+                a{
+                    color: $text-color;
+                    text-align: center;
+                    border: $border;
+                    border-radius: 50%;
+                    margin: 0 5px;
+                    width: 45px;
+                    height: 45px;
+                    line-height: 45px;
+                    transition: .5s;
+                    &.active,
+                    &:hover{
+                        color: $common-color;
+                        background: $background-color;
+                    }
+                }
+            }
+        }
+    }
+}
+#error_banner{
+    padding: 150px 0;
+    h1{
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 56px;
+        margin-bottom: 20px;
+    }
+    p{
+        color: $text-color;
+        font-size: 15px;
+        line-height: 25.5px;
+        margin-bottom: 10px;
+    }
+    a{
+        @extend %btnstyle;
+    }
+}
+//responsive
+//Extra small
+@media (max-width:575px){
+    #error_banner h1 {
+        font-size: 35px;
+        line-height: 30px;
+    }
+    #error_banner p {
+        font-size: 13px;
+        line-height: 15.5px;
+    }
+    #error_banner a{
+        padding: 8px 19px;
+    }
+}
+#contact{
+    .contact_info{
+        .myinfo{
+            margin: 30px 0;
+            .icons{
+                i{
+                    color: $common-color;
+                    background: $background-color;
+                    border-radius: 10px;
+                    text-align: center;
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                }
+            }
+            .text{
+                padding-left: 20px;
+                h6{
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 25.2px;
+                }
+                p,a{
+                    color: $text-color;
+                    font-size: 16px;
+                    line-height: 27.2px;
+                    transition: .5s;
+                }
+                a:hover{
+                    color: $header-hover-color;
+                }
+            }
+        }
+    }
+.contact_form{
+    margin-bottom: 60px;
+    .header{
+        h3{
+            @include header(24px,33.6px);
+        }
+    }
+    input,
+    textarea{
+        color: $header-color;
+        font-size: 14px;
+        line-height: 22.4px;
+        width: 100%;
+        border: $border;
+        padding: 10px 20px;
+        border-radius: 50px;
+        margin-bottom: 30px;
+        &:focus{
+            outline: 0;
+            border-color: $header-hover-color;
+        }
+        &::placeholder{
+            color: $text-color;
+            font-size: 14px;
+            line-height: 22.4px;
+        }
+    }
+    textarea{
+        border-radius: 30px;
+        height: 120px;
+    }
+    button{
+        @extend %btnstyle
+    }
+}
+}

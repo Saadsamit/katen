@@ -260,13 +260,19 @@
                 padding-bottom: 10px;
             }
             input{
+                color: $header-text;
                 font-size: 14px;
                 line-height: 22.4px;
+                text-align: center;
                 border: $border;
                 border-radius: 50px;
                 padding: 10px;
                 &::placeholder{
                     text-align: center;
+                }
+                &:focus{
+                    outline: 0;
+                    border-color: $header-hover-color;
                 }
             }
             button{
@@ -342,7 +348,7 @@
         }
     }
     .side_sec-6{
-        margin-top: 30px;
+        margin: 30px 0;
         .header{
             h3{
                 @extend %newheader;
@@ -359,6 +365,10 @@
                 font-size: 15px;
                 line-height: 25.5px;
                 border-radius: 50px;
+                @extend %hover;
+                &:hover{
+                    border-color: $header-hover-color;
+                }
                 &::before{
                     content: '#';
                 }
