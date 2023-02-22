@@ -46,6 +46,14 @@ $(function(){
         '<i class="fa-solid fa-chevron-left blog_img_arrow"></i>',
       nextArrow:
         '<i class="fa-solid fa-chevron-right blog_img_arrow"></i>',
+        responsive: [
+         {
+            breakpoint: 575,
+            settings:{
+               slidesToShow: 1,
+            }
+         }
+        ]
     });
 });
 let btns = document.getElementById('sidebtn').classList

@@ -366,3 +366,96 @@
         }
     }
 }
+//responsive
+//Medium
+@media (max-width:991px){
+    #banner{
+        .side_inner.border_box{
+            margin-top: 60px;
+        }
+    }
+    #side_sec .side_sec-6 {
+        margin: 60px 0;
+    }
+    .side_nav {
+        width: 40vw;
+    }
+    nav .nav_last ul li #Search .Search_bar {
+        padding-top: 70px;
+    }
+}
+//Small
+@media (max-width:767px){
+    nav .nav_last ul li #Search .Search_bar h4 {
+        font-size: 25px;
+    }
+    .side_nav {
+        width: 50vw;
+    }
+    #inspiration .inspiration_slider .inner .img .text {
+        left: 10px;
+        bottom: 10px;
+    }
+    #inspiration .inspiration_slider .inner .img .text p span {
+        padding-left: 7px;
+    }
+    #inspiration .inspiration_slider .inner .img .text .main a {
+        font-size: 20px;
+        line-height: 20.8px;
+    }
+    #latest_posts .post_container .my_card .info {
+        padding-top: 15px;
+    }
+}
+//Extra small
+@media (max-width:575px){
+    nav .nav_last ul li #Search .Search_bar {
+        width: 80%;
+    }
+    nav .nav_last ul li #Search .Search_bar form button{
+        margin: 15px 0;
+    }
+    .side_nav {
+        width: 90vw;
+    }
+    #side_sec .side_sec-5 .card_container .my_card .main_img .title .link, #latest_posts .post_container .my_card .main_img .title .link, #inspiration .inspiration_slider .inner .img .text .link, #trending .trending_container .my_card .main_img .title .link, #editor .editor_container .my_card .main_img .title .link, #banner .side_inner .btns button.active, #banner .side_inner .btns button, #banner .inner .img .text .link, footer .footer_imgs .footer_text a {
+        padding: 6px 20px;
+    }
+    #banner .inner .img .text {
+        left: 10px;
+        bottom: 10px;
+    }
+    #banner .inner .img .text .main a {
+        font-size: 25px;
+        line-height: 26.8px;
+        margin-bottom: 0px;
+    }
+    #banner .inner .img .text .link {
+        padding: 0px 7px;
+        margin-bottom: 8px;
+    }
+    #banner .side_inner.border_box {
+        margin-top: 35px;
+    }
+    #banner .side_inner .blog_info .blog_container .text h3 {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    #editor .editor_container .my_card {
+        padding-right: 0;
+    }
+    #side_sec .side_sec-1 {
+        margin-top: 0px;
+    }
+    #inspiration .inspiration_slider .inner .img .text .link,
+    #editor .editor_container .my_card .main_img .title .link,
+    #trending .trending_container .my_card .main_img .title .link,
+    #side_sec .side_sec-5 .card_container .my_card .main_img .title .link {
+        padding: 0 5px;
+    }
+    footer .last_footer .social_icon, 
+    footer .last_footer p, 
+    footer .last_footer button {
+        margin: 5px 0;
+    }
+}
