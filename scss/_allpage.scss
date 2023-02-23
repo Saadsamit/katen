@@ -200,7 +200,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 600px;
+    height: 460px;
     position: relative;
     &::before{
         content: '';
@@ -400,6 +400,10 @@
                 padding: 10px 20px;
                 margin-bottom: 10px;
             }
+            textarea:focus,input:focus{
+                outline: 0;
+                border-color: $header-hover-color;
+            }
             textarea{
                 border-radius: 30px;
                 height: 120px;
@@ -412,5 +416,50 @@
                 margin-top: 15px;
             }
         }
+    }
+}
+//responsive
+//Medium
+@media (max-width:991px){
+    #post_details_banner {
+        height: 377px;
+    }
+}
+//Small
+@media (max-width:767px){
+    #post_details_banner {
+        background-position: right;
+        background-size: cover;
+        background-attachment: unset;
+    }
+    #bolgs_news .bolgs_news_details .first img{
+        width: 100%;
+    }
+}
+//Extra small
+@media (max-width:575px){
+    #post_details_banner h1 {
+        font-size: 25px;
+        line-height: 29.4px;
+    }
+    #post_details_banner .info {
+        padding-top: 6px;
+    }
+    #post_details_banner .details_banner {
+        padding-bottom: 20px;
+    }
+    #post_details_banner p, #post_details_banner p a {
+        font-size: 12px;
+        line-height: 12.8px;
+    }
+    #post_details_banner .info .aythor a, #post_details_banner .info .date {
+        font-size: 13px;
+        line-height: 19.8px;
+    }
+    #bolgs_news.post_details .bolgs_news_details .tag  a{
+        padding: 5px;
+    }
+    #bolgs_news.post_details .bolgs_news_details .details_form button {
+        padding: 7px 11px;
     }
 }
