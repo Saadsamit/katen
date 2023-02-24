@@ -53,13 +53,11 @@ $bg:#f1f8ff;
     &::before{
         content: '';
         position: absolute;
-        bottom: 0;
-        right: 0;
+        background: url(../img/header_line.svg);
+        bottom:-10px;
         left: 0;
-        width: 33.33%;
-        background: $header-hover-color;
-        height: 2px;
-
+        width: 33px;
+        height: 6px
     }
 }
 %newheader{
