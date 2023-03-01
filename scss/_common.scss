@@ -367,6 +367,19 @@ nav{
                         border-radius: 20px;
                     }
                 }
+                ul{
+                    border-radius: 0;
+                    border: $border;
+                    li{
+                        a{
+                            &:hover{
+                                background: none;
+                                color: $header-hover-color;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
             }
         }
         .social_icon{
