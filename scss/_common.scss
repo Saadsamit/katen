@@ -521,19 +521,20 @@ nav{
     ul{
         li{
             transition: .5s;
+            div{
+                .page{
+                    border: $border;
+                    color: $header-hover-color;
+                    padding: 8px;
+                    border-radius: 4px;
+                }
+            }
             .innar_menu{
                 padding-top: 0;
-                transform: scale(0);
-                transform-origin: top left;
-                height: 0;
-                transition: .5s;
-            }
-            &:hover .innar_menu{
-                height: 100%;
-                transform: scale(1);
+                transition: 5s;
+                display: none;
             }
         }
-      
     }
 }
 ul{

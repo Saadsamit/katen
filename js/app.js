@@ -29,6 +29,9 @@ $(function(){
         1000
       );
     });
+    $(".side_menu ul li div .page").on('click',function(){
+      $(".side_menu ul li .innar_menu").slideToggle();
+    });
     $('.card_container').slick({
       infinite: true,
       slidesToShow: 1,
